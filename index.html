@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotoamatsukami Store | Blood Moon Sale</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        blood: {
+                            500: '#ff2a2a',
+                            700: '#990000',
+                            900: '#330000',
+                        },
+                        void: '#0a0a0c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-void text-gray-200 font-inter antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-void/50 border-b border-blood-900/50 py-4 px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="font-cinzel text-2xl font-bold tracking-widest text-white glow-text-subtle">
+                <span class="text-blood-500">KOTOAMATSUKAMI</span> STORE
+            </h1>
+            <ul class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider">
+                <li><a href="#home" class="hover:text-blood-500 transition-colors">HOME</a></li>
+                <li><a href="#sale" class="hover:text-blood-500 transition-colors text-blood-500">BLOOD MOON SALE</a></li>
+                <li><a href="#figures" class="hover:text-blood-500 transition-colors">PREMIUM FIGURES</a></li>
+                <li><a href="#about" class="hover:text-blood-500 transition-colors">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/hero_blood_moon_1773606553655.png" alt="Blood Moon Background" class="w-full h-full object-cover object-center scale-105 animate-slow-zoom opacity-70">
+            <div class="absolute inset-0 bg-gradient-to-t from-void via-void/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-radial-gradient"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center max-w-4xl px-4 flex flex-col items-center">
+            <div class="inline-block px-4 py-1 mb-6 border border-blood-500/50 rounded-full backdrop-blur-sm bg-blood-900/20 text-blood-500 text-sm font-semibold tracking-widest uppercase">
+                Limited Time Event
+            </div>
+            <h2 class="font-cinzel text-5xl md:text-7xl font-black text-white mb-4 tracking-tighter leading-tight glow-text-intense">
+                ITACHI'S BIRTHDAY <br>
+                <span class="text-blood-500">BLOOD MOON SALE</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Step into the Tsukuyomi. Experience unparalleled craftsmanship with our premium, hyper-realistic anime action figures. Rare drops available now.
+            </p>
+            
+            <!-- Countdown Timer -->
+            <div class="flex space-x-4 mb-10 text-white font-cinzel text-3xl md:text-4xl font-bold">
+                <div class="flex flex-col items-center frosted-glass p-4 rounded-xl min-w-[90px]">
+                    <span id="days" class="text-blood-500">03</span>
+                    <span class="text-xs font-inter font-normal text-gray-400 mt-1 tracking-widest uppercase">Days</span>
+                </div>
+                <div class="flex flex-col justify-center pb-6">:</div>
+                <div class="flex flex-col items-center frosted-glass p-4 rounded-xl min-w-[90px]">
+                    <span id="hours" class="text-blood-500">14</span>
+                    <span class="text-xs font-inter font-normal text-gray-400 mt-1 tracking-widest uppercase">Hours</span>
+                </div>
+                <div class="flex flex-col justify-center pb-6">:</div>
+                <div class="flex flex-col items-center frosted-glass p-4 rounded-xl min-w-[90px]">
+                    <span id="minutes" class="text-blood-500">45</span>
+                    <span class="text-xs font-inter font-normal text-gray-400 mt-1 tracking-widest uppercase">Mins</span>
+                </div>
+                <div class="flex flex-col justify-center pb-6">:</div>
+                <div class="flex flex-col items-center frosted-glass p-4 rounded-xl min-w-[90px]">
+                    <span id="seconds" class="text-blood-500 animate-pulse-fast">22</span>
+                    <span class="text-xs font-inter font-normal text-gray-400 mt-1 tracking-widest uppercase">Secs</span>
+                </div>
+            </div>
+
+            <a href="#figures" class="group relative px-8 py-4 bg-blood-700 text-white font-bold tracking-widest uppercase rounded-sm overflow-hidden border border-blood-500 shadow-[0_0_20px_rgba(255,42,42,0.4)] hover:shadow-[0_0_40px_rgba(255,42,42,0.8)] transition-all duration-300">
+                <div class="absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full opacity-10"></div>
+                <span class="relative">Awaken the Collection</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Figures Section -->
+    <section id="figures" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20">
+                <h3 class="font-cinzel text-4xl md:text-5xl font-bold text-white mb-4"><span class="text-blood-500">PREMIUM</span> ARTIFACTS</h3>
+                <div class="w-24 h-1 bg-blood-500 mx-auto shadow-[0_0_10px_#ff2a2a]"></div>
+                <p class="mt-6 text-gray-400 max-w-2xl mx-auto">Meticulously sculpted. Hyper-realistic details. Own a piece of the battlefield.</p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Itachi Card (Featured/Larger if we want, but keeping uniform for now) -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/itachi_figure_1773606570379.png" alt="Itachi Uchiha" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Itachi Uchiha</h4>
+                            <span class="text-blood-500 font-bold text-xl">$299</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Akatsuki Cloak · Mangekyou active</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-blood-600 text-white border border-white/20 hover:border-blood-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gojo Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/gojo_figure_1773606586512.png" alt="Satoru Gojo" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Satoru Gojo</h4>
+                            <span class="text-blue-500 font-bold text-xl">$320</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Unlimited Void · Blindfold on</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-blue-600 text-white border border-white/20 hover:border-blue-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Sukuna Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/sukuna_figure_1773606603242.png" alt="Ryomen Sukuna" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Ryomen Sukuna</h4>
+                            <span class="text-red-500 font-bold text-xl">$350</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">King of Curses · Malevolent Shrine</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-red-600 text-white border border-white/20 hover:border-red-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Toji Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/toji_figure_1773606633441.png" alt="Toji Fushiguro" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Toji Fushiguro</h4>
+                            <span class="text-green-500 font-bold text-xl">$280</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Sorcerer Killer · Inverted Spear</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-green-700 text-white border border-white/20 hover:border-green-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Hinata Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/hinata_figure_1773606648257.png" alt="Hinata Hyuga" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Hinata Hyuga</h4>
+                            <span class="text-purple-400 font-bold text-xl">$250</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Byakugan Princess · Twin Lion Fists</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-purple-700 text-white border border-white/20 hover:border-purple-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Maki Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/maki_figure_1773606663371.png" alt="Maki Zenin" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Maki Zenin</h4>
+                            <span class="text-orange-500 font-bold text-xl">$270</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Playful Cloud · awakened</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-orange-600 text-white border border-white/20 hover:border-orange-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Tsunade Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md md:col-span-2 lg:col-span-3 lg:w-1/3 lg:mx-auto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/tsunade_figure_1773606680666.png" alt="Tsunade" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Tsunade Senju</h4>
+                            <span class="text-yellow-500 font-bold text-xl">$310</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Fifth Hokage · 100 Healings Mark</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-yellow-600 text-white border border-white/20 hover:border-yellow-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Makima Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/makima_figure.jpg" alt="Makima" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Makima</h4>
+                            <span class="text-pink-500 font-bold text-xl">$295</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Control Devil · Public Safety</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-pink-600 text-white border border-white/20 hover:border-pink-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Yor Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/yor_figure.jpg" alt="Yor Forger" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Yor Forger</h4>
+                            <span class="text-red-500 font-bold text-xl">$310</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Thorn Princess · Assassin Form</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-red-600 text-white border border-white/20 hover:border-red-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Nezuko Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/nezuko_figure.jpg" alt="Nezuko Kamado" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Nezuko Kamado</h4>
+                            <span class="text-pink-400 font-bold text-xl">$275</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Demon Form · Bamboo Muzzle</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-pink-700 text-white border border-white/20 hover:border-pink-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Power Card -->
+                <div class="figure-card group relative rounded-2xl overflow-hidden bg-gray-900/50 border border-gray-800 backdrop-blur-md md:col-span-2 lg:col-span-3 lg:w-1/3 lg:mx-auto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                    <div class="h-[450px] overflow-hidden">
+                        <img src="./assets/power_figure.jpg" alt="Power" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="flex justify-between items-end mb-2">
+                            <h4 class="font-cinzel text-2xl font-bold text-white">Power</h4>
+                            <span class="text-yellow-400 font-bold text-xl">$280</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Blood Fiend · Casual</p>
+                        <button class="w-full py-3 bg-white/10 hover:bg-yellow-600 text-white border border-white/20 hover:border-yellow-500 rounded font-semibold tracking-wider transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blood-900/30 bg-black/80 pt-16 pb-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="font-cinzel text-3xl font-bold text-white mb-6"><span class="text-blood-500">KOTOAMATSUKAMI</span> STORE</h2>
+            <p class="text-gray-400 max-w-md mx-auto mb-8 font-light">
+                Forged in the shadows, delivered to reality. Premium anime figures for the true collectors.
+            </p>
+            <div class="flex justify-center space-x-6 mb-12">
+                <a href="#" class="text-gray-400 hover:text-blood-500 transition-colors">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-blood-500 transition-colors">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-blood-500 transition-colors">Discord</a>
+            </div>
+            <p class="text-xs text-gray-600">© 2026 Kotoamatsukami Store. Not affiliated with actual shinobi villages.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for dynamic effects -->
+    <script>
+        // Simple countdown logic
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 14);
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = targetDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Navbar blur effect on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-void/90', 'shadow-lg', 'shadow-blood-900/20');
+                nav.classList.remove('bg-void/50');
+            } else {
+                nav.classList.remove('bg-void/90', 'shadow-lg', 'shadow-blood-900/20');
+                nav.classList.add('bg-void/50');
+            }
+        });
+    </script>
+</body>
+</html>
